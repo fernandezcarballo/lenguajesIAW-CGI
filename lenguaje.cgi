@@ -4,6 +4,7 @@ use utf8;
 use CGI;
 $query = new CGI;
 
+#print $query->header("text/html;charset=UTF-8"); --Alternativa a use utf8;
 print $query->header;
 print $query->start_html('MODULO CGI');
 if(!$query->param) {
