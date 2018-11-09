@@ -28,11 +28,8 @@ else{
 		print $query->submit(-name=>'enviar',-value=>'Enviar');
 	      	print $query->end_form;
 		print $query->br;
-
 	}
 }
-
-
 if (!$query->param('enviar') eq ""){
 	print $query->start_html;
       	print $query->start_form;
