@@ -3,23 +3,13 @@ Script para saber el lenguaje que mas te guste.
 
 Nuestro script tiene la siguiente funcionalidad:
 
-    Gracias al curso de ASIR, hemos aprendido varios sistemas operativos e incluso ejecutado alguno de ellos.
-    En el, tendremos que elegir el lenguaje que más nos guste, lo hayamos dado o no.
-
-Lo que vamos a necesitar para nuestra ejecución:
-
-    Servidor Apache2
-    Activar CGI-BIN en apache (#a2enmod cgi)
-    Transferir nuestro .cgi a la ruta /usr/lib/cgi-bin/
-
-Para su ejecución debemos hacerlo de la siguiente manera:
-    
-    -localhost/cgi-bin/lenguaje.cgi
-        Ejecutariamos nuestro cgi el cual nos pedira primeramente que escribamos un lenguaje, el que más nos 
-        guste, una vez lo escribimos, vamos a pasar a poner una nota a ese lenguaje.
-   
-    -Una vez enviamos ese formulario, pasaremos al segundo el cual tendra como primera lìnea...
-        El lenguaje elegido es: (lenguaje) y le das una nota de: (nota)
-        
-    -Lo siguiente que nos saldra sera una breve pregunta en la cual pide que expliques porque te gusta más el 
-    lenguaje que has escogido anteriormente.
+    En este script, vamos a ver como movernos por ventanas diferentes mediante formularios.
+    - En el primer formulario:
+           - Debemos introducir el nombre de un lenguaje
+           - Luego debemos valorar cuanto nos gusta ese lenguaje.
+    - Una vez pasamos el primer formulario, acto seguido nos saldra el siguiente formunlario
+      pero justo encima de la siguiente pregunta aparecera una línea donde pondra: 
+           - Te gusta el lenguaje (Nombre del lenguaje) y le doy una nota de un (Nota introducida)
+           . La pregunta que se formula es una explicación breve de porque te gusta ese lenguaje.
+           
+    - Una vez terminado el formulario, nos aparecera la explicación dada en la última pregunta.
